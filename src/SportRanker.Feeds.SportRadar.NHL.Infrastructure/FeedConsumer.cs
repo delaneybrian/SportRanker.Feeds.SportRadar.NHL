@@ -4,6 +4,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
+using SportRanker.Contracts.Dto;
 using SportRanker.Feeds.SportRadar.NHL.Definitions;
 using SportRanker.Feeds.SportRadar.NHL.Interfaces;
 
@@ -52,6 +53,8 @@ namespace SportRanker.Feeds.SportRadar.NHL.Infrastructure
                         feedFixtures.Add(
                             new FeedFixture()
                             {
+                                FeedSource = SourceId.SportRadar,
+                                ProviderFixtureId = game.Id,
                                 KickOffTimeUtc = game.Scheduled,
                                 HomeTeamId = game.Home.Id,
                                 HomeTeamName = game.Home.Name,

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading.Tasks;
 using Autofac;
 using SportRanker.Feeds.SportRadar.NHL.Interfaces;
 
@@ -13,7 +12,7 @@ namespace SportRanker.Feeds.SportRadar.NHL.App
 
             var feedProcessor = container.Resolve<IFeedProcessor>();
 
-            Task.Run(() => feedProcessor.StartProcessing());
+            feedProcessor.StartProcessing().Wait();
 
             Console.ReadKey();
         }

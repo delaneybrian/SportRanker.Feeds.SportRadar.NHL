@@ -1,7 +1,6 @@
 ﻿using SportRanker.Feeds.SportRadar.NHL.Interfaces;
-using System;
 using System.Threading.Tasks;
-using Timer = System.Timers.Timer;
+using SportRanker.Feeds.SportRadar.NHL.Application.Extensions;
 
 namespace SportRanker.Feeds.SportRadar.NHL.Application
 {
@@ -9,41 +8,29 @@ namespace SportRanker.Feeds.SportRadar.NHL.Application
     {
         public readonly IFeedConsumer _feedConsumer;
         public readonly IPublisher _publisher;
-
-        private Timer _feedRetrivalTimer;
-        private int OneDayInterval = 1000 * 60 * 60 * 24;
+        public readonly IFixtureResultDeriver _fixtureResultDeriver;
 
         public FeedProcessor(IFeedConsumer feedConsumer,
-            IPublisher publisher)
+            IPublisher publisher,
+            IFixtureResultDeriver fixtureResultDeriver)
         {
             _feedConsumer = feedConsumer;
             _publisher = publisher;
-
-            _feedRetrivalTimer = new Timer();
-            _feedRetrivalTimer.Elapsed += OnTimerElapsed;
-            _feedRetrivalTimer.Interval = OneDayInterval;
+            _fixtureResultDeriver = fixtureResultDeriver;
         }
+
 
         public async Task StartProcessing()
         {
-            _feedRetrivalTimer.Start();
-            OnTimerElapsed(this, null);
-        }
+            var feedResults = await _feedConsumer.GetFixtureResultsForYesterdayAsync();
 
-        public void OnTimerElapsed(object sender, EventArgs e)
-        {
-            Task.Run(async () =>
+            foreach (var feedResult in feedResults)
             {
-                var feedResults = await _feedConsumer.GetFixtureResultsForYesterdayAsync();
+                var fixtureResultMaybe = await _fixtureResultDeriver.TryGenerateFixtureResult(feedResult);
 
-                foreach (var feedResult in feedResults)
-                {
-                    var fixtureResult = ResultConverter.ConvertFromFeedFixtureResult(feedResult);
-
+                if (fixtureResultMaybe.TrySome(out var fixtureResult))
                     _publisher.PublishFixtureResult(fixtureResult);
-                }
-
-            });
+            }
         }
     }
 }

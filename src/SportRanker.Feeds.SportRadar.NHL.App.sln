@@ -3,15 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportRanker.Feeds.SportRadar.NHL.App", "SportRanker.Feeds.SportRadar.NHL.App\SportRanker.Feeds.SportRadar.NHL.App.csproj", "{973A5831-106D-41AB-A714-7D0BC75ED456}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportRanker.Feeds.SportRadar.NHL.App", "SportRanker.Feeds.SportRadar.NHL.App\SportRanker.Feeds.SportRadar.NHL.App.csproj", "{973A5831-106D-41AB-A714-7D0BC75ED456}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportRanker.Feeds.SportRadar.NHL.Contracts", "SportRanker.Feeds.SportRadar.NHL.Contracts\SportRanker.Feeds.SportRadar.NHL.Contracts.csproj", "{9D6B3052-F57D-47E2-A3C8-7337FDBCB8A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportRanker.Feeds.SportRadar.NHL.Definitions", "SportRanker.Feeds.SportRadar.NHL.Definitions\SportRanker.Feeds.SportRadar.NHL.Definitions.csproj", "{4AE5644A-1898-4C4B-ACD0-CE1E9948260D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportRanker.Feeds.SportRadar.NHL.Definitions", "SportRanker.Feeds.SportRadar.NHL.Definitions\SportRanker.Feeds.SportRadar.NHL.Definitions.csproj", "{4AE5644A-1898-4C4B-ACD0-CE1E9948260D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportRanker.Feeds.SportRadar.NHL.Interfaces", "SportRanker.Feeds.SportRadar.NHL.Interfaces\SportRanker.Feeds.SportRadar.NHL.Interfaces.csproj", "{DC49F4FB-AFA3-4EB5-904C-DD34338A8654}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportRanker.Feeds.SportRadar.NHL.Interfaces", "SportRanker.Feeds.SportRadar.NHL.Interfaces\SportRanker.Feeds.SportRadar.NHL.Interfaces.csproj", "{DC49F4FB-AFA3-4EB5-904C-DD34338A8654}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportRanker.Feeds.SportRadar.NHL.Infrastructure", "SportRanker.Feeds.SportRadar.NHL.Infrastructure\SportRanker.Feeds.SportRadar.NHL.Infrastructure.csproj", "{5BB71932-8ADC-49E6-947B-660AF41D20EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportRanker.Feeds.SportRadar.NHL.Infrastructure", "SportRanker.Feeds.SportRadar.NHL.Infrastructure\SportRanker.Feeds.SportRadar.NHL.Infrastructure.csproj", "{5BB71932-8ADC-49E6-947B-660AF41D20EE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportRanker.Feeds.SportRadar.NHL.Application", "SportRanker.Feeds.SportRadar.NHL.Application\SportRanker.Feeds.SportRadar.NHL.Application.csproj", "{7FC020C5-728A-49DF-83C1-8DE5D85C9894}"
 EndProject
@@ -25,10 +23,6 @@ Global
 		{973A5831-106D-41AB-A714-7D0BC75ED456}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{973A5831-106D-41AB-A714-7D0BC75ED456}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{973A5831-106D-41AB-A714-7D0BC75ED456}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9D6B3052-F57D-47E2-A3C8-7337FDBCB8A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9D6B3052-F57D-47E2-A3C8-7337FDBCB8A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9D6B3052-F57D-47E2-A3C8-7337FDBCB8A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9D6B3052-F57D-47E2-A3C8-7337FDBCB8A5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4AE5644A-1898-4C4B-ACD0-CE1E9948260D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4AE5644A-1898-4C4B-ACD0-CE1E9948260D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AE5644A-1898-4C4B-ACD0-CE1E9948260D}.Release|Any CPU.ActiveCfg = Release|Any CPU

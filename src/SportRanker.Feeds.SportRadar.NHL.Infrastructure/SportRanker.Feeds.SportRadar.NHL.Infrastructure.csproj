@@ -10,7 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SportRanker.Feeds.SportRadar.NHL.Contracts\SportRanker.Feeds.SportRadar.NHL.Contracts.csproj" />
     <ProjectReference Include="..\SportRanker.Feeds.SportRadar.NHL.Interfaces\SportRanker.Feeds.SportRadar.NHL.Interfaces.csproj" />
   </ItemGroup>
 
