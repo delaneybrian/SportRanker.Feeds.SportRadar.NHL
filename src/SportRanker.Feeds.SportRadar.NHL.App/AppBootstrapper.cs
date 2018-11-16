@@ -5,7 +5,7 @@ using SportRanker.Feeds.SportRadar.NHL.Interfaces;
 
 namespace SportRanker.Feeds.SportRadar.NHL.App
 {
-    public class AppBootstrapper
+    public static class AppBootstrapper
     {
         public static IContainer Bootstrap()
         {

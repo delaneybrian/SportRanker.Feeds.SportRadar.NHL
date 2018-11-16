@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportRanker.Feeds.SportRadar.NHL.App", "SportRanker.Feeds.SportRadar.NHL.App\SportRanker.Feeds.SportRadar.NHL.App.csproj", "{973A5831-106D-41AB-A714-7D0BC75ED456}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportRanker.Feeds.SportRadar.NHL.Definitions", "SportRanker.Feeds.SportRadar.NHL.Definitions\SportRanker.Feeds.SportRadar.NHL.Definitions.csproj", "{4AE5644A-1898-4C4B-ACD0-CE1E9948260D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportRanker.Feeds.SportRadar.NHL.Interfaces", "SportRanker.Feeds.SportRadar.NHL.Interfaces\SportRanker.Feeds.SportRadar.NHL.Interfaces.csproj", "{DC49F4FB-AFA3-4EB5-904C-DD34338A8654}"
@@ -13,16 +11,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportRanker.Feeds.SportRada
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportRanker.Feeds.SportRadar.NHL.Application", "SportRanker.Feeds.SportRadar.NHL.Application\SportRanker.Feeds.SportRadar.NHL.Application.csproj", "{7FC020C5-728A-49DF-83C1-8DE5D85C9894}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportRanker.Feeds.SportRadar.NHL.App", "SportRanker.Feeds.SportRadar.NHL.App\SportRanker.Feeds.SportRadar.NHL.App.csproj", "{0ED986EB-D20C-42C2-83F3-FE49632C70F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{973A5831-106D-41AB-A714-7D0BC75ED456}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{973A5831-106D-41AB-A714-7D0BC75ED456}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{973A5831-106D-41AB-A714-7D0BC75ED456}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{973A5831-106D-41AB-A714-7D0BC75ED456}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4AE5644A-1898-4C4B-ACD0-CE1E9948260D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4AE5644A-1898-4C4B-ACD0-CE1E9948260D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AE5644A-1898-4C4B-ACD0-CE1E9948260D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +35,10 @@ Global
 		{7FC020C5-728A-49DF-83C1-8DE5D85C9894}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FC020C5-728A-49DF-83C1-8DE5D85C9894}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FC020C5-728A-49DF-83C1-8DE5D85C9894}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ED986EB-D20C-42C2-83F3-FE49632C70F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ED986EB-D20C-42C2-83F3-FE49632C70F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ED986EB-D20C-42C2-83F3-FE49632C70F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ED986EB-D20C-42C2-83F3-FE49632C70F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
