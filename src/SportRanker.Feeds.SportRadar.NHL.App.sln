@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportRanker.Feeds.SportRada
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportRanker.Feeds.SportRadar.NHL.Application", "SportRanker.Feeds.SportRadar.NHL.Application\SportRanker.Feeds.SportRadar.NHL.Application.csproj", "{7FC020C5-728A-49DF-83C1-8DE5D85C9894}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportRanker.Feeds.SportRadar.NHL.App", "SportRanker.Feeds.SportRadar.NHL.App\SportRanker.Feeds.SportRadar.NHL.App.csproj", "{0ED986EB-D20C-42C2-83F3-FE49632C70F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportRanker.Feeds.SportRadar.NHL.App", "SportRanker.Feeds.SportRadar.NHL.App\SportRanker.Feeds.SportRadar.NHL.App.csproj", "{0ED986EB-D20C-42C2-83F3-FE49632C70F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportRanker.Feeds.SportRadar.NHL.TestApp", "SportRanker.Feeds.SportRadar.NHL.TestApp\SportRanker.Feeds.SportRadar.NHL.TestApp.csproj", "{147B5588-A38F-456C-B0F9-E67324EB4992}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{0ED986EB-D20C-42C2-83F3-FE49632C70F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0ED986EB-D20C-42C2-83F3-FE49632C70F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0ED986EB-D20C-42C2-83F3-FE49632C70F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{147B5588-A38F-456C-B0F9-E67324EB4992}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{147B5588-A38F-456C-B0F9-E67324EB4992}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{147B5588-A38F-456C-B0F9-E67324EB4992}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{147B5588-A38F-456C-B0F9-E67324EB4992}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

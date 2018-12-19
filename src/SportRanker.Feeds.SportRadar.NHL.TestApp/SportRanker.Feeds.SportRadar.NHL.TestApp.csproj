@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.8.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="Optional" Version="4.0.0" />
+    <PackageReference Include="RabbitMQ.Client" Version="5.1.0" />
+    <PackageReference Include="SportRanker.Contracts.Dto" Version="1.2.0" />
+    <PackageReference Include="SportRanker.Contracts.SystemEvents" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SportRanker.Feeds.SportRadar.NHL.Application\SportRanker.Feeds.SportRadar.NHL.Application.csproj" />
+    <ProjectReference Include="..\SportRanker.Feeds.SportRadar.NHL.App\SportRanker.Feeds.SportRadar.NHL.App.csproj" />
+    <ProjectReference Include="..\SportRanker.Feeds.SportRadar.NHL.Definitions\SportRanker.Feeds.SportRadar.NHL.Definitions.csproj" />
+    <ProjectReference Include="..\SportRanker.Feeds.SportRadar.NHL.Infrastructure\SportRanker.Feeds.SportRadar.NHL.Infrastructure.csproj" />
+    <ProjectReference Include="..\SportRanker.Feeds.SportRadar.NHL.Interfaces\SportRanker.Feeds.SportRadar.NHL.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>
