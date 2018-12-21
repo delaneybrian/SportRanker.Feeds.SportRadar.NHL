@@ -37,13 +37,13 @@ namespace SportRanker.Feeds.SportRadar.NHL.Application
                         SportId = SportId.NHL,
                         Source = SourceId.SportRadar,
                         SourceId = feedFixture.ProviderFixtureId,
-                        HomeTeamId = feedFixture.HomeTeamId,
-                        HomeTeamName = feedFixture.HomeTeamName,
+                        HomeTeamId = homeTeam.Id,
+                        HomeTeamName = homeTeam.Name,
                         HomeTeamScore = feedFixture.HomeTeamScore,
-                        AwayTeamId = feedFixture.AwayTeamId,
-                        AwayTeamName = feedFixture.AwayTeamName,
+                        AwayTeamId = awayTeam.Id,
+                        AwayTeamName = awayTeam.Name,
                         AwayTeamScore = feedFixture.AwayTeamScore,
-                        KickOffTimeUtc = feedFixture.KickOffTimeUtc
+                        KickOffTimeUtc = feedFixture.KickOffTimeUtc,
                     });
                 }
             }
