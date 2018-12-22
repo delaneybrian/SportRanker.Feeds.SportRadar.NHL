@@ -9,7 +9,7 @@ namespace SportRanker.Feeds.SportRadar.NHL.App
     public static class NHLResultFinder
     {
         [FunctionName("NHLResultFinder")]
-        public static void Run([TimerTrigger("0 0 23 * * *")]TimerInfo myTimer, TraceWriter log)
+        public static void Run([TimerTrigger("0 0 09 * * *")]TimerInfo myTimer, TraceWriter log)
         {
             log.Info($"C#" +
                $" Timer trigger function executed at: {DateTime.Now}");
