@@ -11,7 +11,7 @@ namespace SportRanker.Feeds.SportRadar.NHL.TestApp
 
             var feedProcessor = container.Resolve<IFeedProcessor>();
 
-            feedProcessor.ProcessHistoricalFixtures(3).Wait();
+            feedProcessor.ProcessHistoricalFixtures(7).Wait();
         }
     }
 }
