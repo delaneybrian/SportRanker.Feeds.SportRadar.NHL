@@ -34,7 +34,7 @@ namespace SportRanker.Feeds.SportRadar.NHL.Application
 
         public async Task StartProcessing()
         {
-            var feedResults = await _feedConsumer.GetFixtureResultsForYesterdayAsync();
+            var feedResults = await _feedConsumer.GetFixtureResultsForPreviousDaysAsync(8);
 
             foreach (var feedResult in feedResults)
             {
